@@ -149,23 +149,59 @@ Open your browser at **http://localhost:5173**.
 
 ---
 
-## 4. End-to-End 12-Step Hackathon Demo Walkthrough
+## 4. Visual Demo Tutorial & Workflow Screenshots
 
-Follow this exact flow during demonstrations or judge presentations:
+> [!TIP]
+> **Try it live in your browser:** [https://mariem-elbahat.github.io/panch/](https://mariem-elbahat.github.io/panch/)  
+> Use the **3-Min Pitch Tour Bar** at the top of the interface to click through each stage interactively during presentations.
 
-1. **Dashboard & Accounts:** Open http://localhost:5173. Note the 3 pre-seeded deals and the active role indicator (**Alice Chen - Buyer**).
-2. **Create a Deal:** Click **+ Create New Deal**. Fill in title (*e.g. "Mobile Banking Checkout SDK"*), 500 USDC, 7 days deadline, add 2 deliverables, and click **Review Deal Summary**.
-3. **Confirm & Record:** Click **Confirm & Create Deal**. The deal is established with ID `TRU-2026-XXXX` and logged to the HCS audit stream.
-4. **Deposit into Escrow:** In the Deal Room, click **Deposit $500 USDC**. The status changes to `FUNDED`, locking funds in contract custody.
-5. **Switch Role to Seller:** In the top-right header, switch active role to **Bob Martinez (Seller)**.
-6. **Navigate to Seller Workspace:** Click **Seller** in navigation. Click **Submit Delivery & Evidence**. Enter handover notes and a GitHub PR link. Submit.
-7. **Switch Role to Buyer:** Switch role back to **Alice Chen (Buyer)**.
-8. **Raise a Dispute:** View the delivered deal. Click **Raise Dispute**. Select *"Incomplete Deliverables"*, enter grievance details, and submit. The status transitions to `DISPUTED`.
-9. **Open Dispute Resolution:** Click **Open Dispute Console & AI Analysis**.
-10. **Inspect AI Evidence Assistant:** Review the automated cross-reference of agreement vs buyer claims vs seller handover, the discrepancy warnings, and the recommended 60/40 Split Settlement.
-11. **Switch Role to Arbiter:** Switch active role in header to **Carol Vance (Certified Arbiter)**.
-12. **Execute Settlement Ruling:** Select **Split Settlement**, adjust the slider to 70% Seller / 30% Buyer, enter arbiter rationale notes, and click **Confirm Arbiter Settlement Ruling**.
-13. **Verify Final State & Audit Trail:** Confirm final status is `SETTLED` with exact USDC distribution. Open **Audit Trail** to view all recorded events with HashScan links.
+### Step 1: Protocol Dashboard
+The dashboard provides a real-time portfolio overview: total USDC held in contract custody, active deals, disputed cases, active role switching (Alice / Bob / Carol), and the live Hedera Consensus Service audit ticker.
+
+![TRUSETT Dashboard](docs/screenshots/01_dashboard.png)
+
+---
+
+### Step 2: Milestone Agreement Creation
+The buyer and seller define deliverables, acceptance standards, and the USDC milestone budget. A unique deal ID is generated and an initial agreement event is broadcast to the HCS topic.
+
+![Deal Room & Agreement](docs/screenshots/02_create_deal.png)
+
+---
+
+### Step 3: Non-Custodial USDC Escrow Deposit
+The buyer deposits USDC into the Hedera smart contract. The contract automatically ensures HTS token association via system precompile `0x167` and transitions the state to **`FUNDED`**.
+
+![Escrow Funded](docs/screenshots/03_escrow_funded.png)
+
+---
+
+### Step 4: Seller Deliverables Handover
+The seller completes milestone items (e.g. Figma auto-layout tokens, GitHub pull requests) and submits delivery notes with external proof links. All checklist items are marked complete and the deal transitions to **`DELIVERED`**.
+
+![Delivery Handover](docs/screenshots/04_delivery_submitted.png)
+
+---
+
+### Step 5: Dispute Raised & AI Evidence Assistant Synthesis
+If the deliverables fail acceptance standards (e.g. mobile viewport truncation), the buyer opens a dispute. The **AI Evidence Assistant** analyzes the contract, detects discrepancies, identifies missing documentation, and recommends a fair settlement (e.g. 60% seller / 40% buyer) with structured reasoning.  
+*(AI recommendations are strictly informational; AI never independently controls funds).*
+
+![Dispute & AI Evidence Assistant](docs/screenshots/05_dispute_ai_analysis.png)
+
+---
+
+### Step 6: Authorized Arbiter Settlement Ruling
+The designated human arbiter (Carol Vance) independently evaluates the evidence and confirms an authorized ruling (Release, Refund, or Split). The smart contract automatically distributes funds and updates status to **`SETTLED`**.
+
+![Settlement Execution](docs/screenshots/06_settlement_executed.png)
+
+---
+
+### Step 7: Immutable Hedera Consensus Service (HCS) Audit Trail
+Every lifecycle state change (`DEAL_CREATED`, `ESCROW_FUNDED`, `DELIVERY_SUBMITTED`, `DISPUTE_RAISED`, `ARBITER_RULING`) is permanently recorded on Hedera Consensus Service with verifiable sequence numbers, timestamps, and direct HashScan links.
+
+![HCS Audit Trail](docs/screenshots/07_audit_trail.png)
 
 ---
 

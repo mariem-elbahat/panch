@@ -45,15 +45,13 @@ def create_account(name):
     return receipt.account_id, key
 
 
-# 1) Faux USDC (6 décimales, comme le vrai)
 receipt = (
-    TokenCreateTransaction(
-        token_name="Test USDC",
-        token_symbol="tUSDC",
-        decimals=6,
-        initial_supply=1_000_000 * 10**6,
-        treasury_account_id=operator_id,
-    )
+    TokenCreateTransaction()
+    .set_token_name("Test USDC")
+    .set_token_symbol("tUSDC")
+    .set_decimals(6)
+    .set_initial_supply(1_000_000 * 10**6)
+    .set_treasury_account_id(operator_id)
     .freeze_with(client)
     .sign(operator_key)
     .execute(client)
@@ -101,4 +99,4 @@ with open("accounts.json", "w") as f:
     json.dump(data, f, indent=2)
 
 print("Saved to accounts.json")
-print(f"Token on HashScan: https://hashscan.io/testnet/token/{token_id}")
+print("Token on HashScan: https://hashscan.io/testnet/token/{token_id}")

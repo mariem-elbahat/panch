@@ -5,6 +5,9 @@
 [![Vite](https://img.shields.io/badge/Frontend-React%20%2B%20TypeScript%20%2B%20Vite-2F6B4F?style=flat)](https://vitejs.dev)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20%2B%20Python%203.15-C6DF78?style=flat)](https://fastapi.tiangolo.com)
 [![Solidity](https://img.shields.io/badge/Smart%20Contracts-Solidity%200.8.20-1C3028?style=flat)](https://soliditylang.org)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-C6DF78?style=for-the-badge&logo=github)](https://mariem-elbahat.github.io/panch/)
+
+> **Live Interactive Demo:** [https://mariem-elbahat.github.io/panch/](https://mariem-elbahat.github.io/panch/)
 
 TRUSETT intercepts irreversible stablecoin payments and wraps them in a verifiable milestone escrow, delivery evidence verification, and AI-assisted dispute resolution framework on the **Hedera Network**.
 

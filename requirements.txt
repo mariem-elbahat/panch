@@ -1,0 +1,2 @@
+hiero_sdk_python
+python-dotenv

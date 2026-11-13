@@ -218,5 +218,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Secrets & generated accounts
 accounts.json
-accounts.json
+.env.local
+*.key
+*.pem
+backend/data/*.db
+frontend/dist
+frontend/node_modules

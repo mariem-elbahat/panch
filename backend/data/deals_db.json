@@ -1,0 +1,236 @@
+{
+  "TRU-2026-001": {
+    "id": "TRU-2026-001",
+    "title": "Fintech Mobile App UI/UX Redesign",
+    "description": "Complete Figma redesign of user onboarding, asset custody screens, and payment checkout flow with mobile auto-layout tokens.",
+    "service_category": "Product Design",
+    "buyer_address": "0.0.482910",
+    "buyer_name": "Alice Chen (Fintech Founder)",
+    "seller_address": "0.0.519283",
+    "seller_name": "Bob Martinez (Design Agency Lead)",
+    "arbiter_address": "0.0.381042",
+    "arbiter_name": "Carol Vance (Certified Arbiter)",
+    "amount_usdc": 2500.0,
+    "deadline_timestamp": 1795191619,
+    "acceptance_criteria": "Figma workspace must include responsive auto-layout tokens (iOS 390px, Android 360px), interactive prototype, and exported SVG icon library.",
+    "state": "SETTLED",
+    "created_at": 1794500419,
+    "funded_at": 1794595734,
+    "delivered_at": 1794595745,
+    "settled_at": 1794595748,
+    "deliverables": [
+      {
+        "id": "d1-1",
+        "title": "User Flow & Wireframe Specs",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d1-2",
+        "title": "High-Fidelity Onboarding Components",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d1-3",
+        "title": "Design System Styleguide & Tokens",
+        "description": "",
+        "is_completed": true
+      }
+    ],
+    "delivery_notes": "ok",
+    "dispute_reason": null,
+    "dispute_claim_details": null,
+    "evidence_items": [],
+    "seller_payout_usdc": 2500.0,
+    "buyer_refund_usdc": 0.0,
+    "hcs_topic_id": null,
+    "funding_tx_id": "0.0.482910@1794595734.000000001",
+    "settlement_tx_id": "0.0.482910@1794595748.000000001",
+    "is_demo": true
+  },
+  "TRU-2026-002": {
+    "id": "TRU-2026-002",
+    "title": "Smart Contract Security Audit & Fixes",
+    "description": "Comprehensive security assessment of EVM & Hedera Smart Contract escrow functions, reentrancy analysis, and gas optimization.",
+    "service_category": "Security & Engineering",
+    "buyer_address": "0.0.482910",
+    "buyer_name": "Alice Chen (Fintech Founder)",
+    "seller_address": "0.0.519283",
+    "seller_name": "Bob Martinez (Design Agency Lead)",
+    "arbiter_address": "0.0.381042",
+    "arbiter_name": "Carol Vance (Certified Arbiter)",
+    "amount_usdc": 5000.0,
+    "deadline_timestamp": 1794673219,
+    "acceptance_criteria": "Formal PDF report detailing all High/Med/Low vulnerabilities, Slither analysis logs, and GitHub PR containing remediation patches.",
+    "state": "DELIVERED",
+    "created_at": 1794154819,
+    "funded_at": 1794241219,
+    "delivered_at": 1794583219,
+    "settled_at": null,
+    "deliverables": [
+      {
+        "id": "d2-1",
+        "title": "Automated Static Analysis (Slither)",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d2-2",
+        "title": "Manual Reentrancy & Logic Review",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d2-3",
+        "title": "Remediation Pull Request on GitHub",
+        "description": "",
+        "is_completed": true
+      }
+    ],
+    "delivery_notes": "Audit completed successfully. Zero critical issues found. PR #14 submitted with gas optimizations and Slither verification passing.",
+    "dispute_reason": null,
+    "dispute_claim_details": null,
+    "evidence_items": [
+      {
+        "id": "ev-201",
+        "uploaded_by": "seller",
+        "title": "Audit_Report_Trusett_v1.0.pdf",
+        "description": "Formal 24-page security report signed by lead auditor.",
+        "url_or_hash": "ipfs://QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco",
+        "created_at": 1794583219
+      },
+      {
+        "id": "ev-202",
+        "uploaded_by": "seller",
+        "title": "GitHub PR #14 (Security Patch)",
+        "description": "Remediation commits addressing findings #1 through #4.",
+        "url_or_hash": "https://github.com/trusett-demo/contracts/pull/14",
+        "created_at": 1794583319
+      }
+    ],
+    "seller_payout_usdc": null,
+    "buyer_refund_usdc": null,
+    "hcs_topic_id": null,
+    "funding_tx_id": null,
+    "settlement_tx_id": null,
+    "is_demo": true
+  },
+  "TRU-2026-003": {
+    "id": "TRU-2026-003",
+    "title": "Brand Identity & Webflow Landing Page",
+    "description": "Visual branding suite including logo mark, typography hierarchy, and a responsive Webflow landing page with custom CMS integration.",
+    "service_category": "Brand & Web",
+    "buyer_address": "0.0.482910",
+    "buyer_name": "Alice Chen (Fintech Founder)",
+    "seller_address": "0.0.519283",
+    "seller_name": "Bob Martinez (Design Agency Lead)",
+    "arbiter_address": "0.0.381042",
+    "arbiter_name": "Carol Vance (Certified Arbiter)",
+    "amount_usdc": 1800.0,
+    "deadline_timestamp": 1794579619,
+    "acceptance_criteria": "Responsive Webflow page passing PageSpeed >90, custom typography licensing transferred, and functional newsletter form integration.",
+    "state": "DISPUTED",
+    "created_at": 1794068419,
+    "funded_at": 1794154819,
+    "delivered_at": 1794579619,
+    "settled_at": null,
+    "deliverables": [
+      {
+        "id": "d3-1",
+        "title": "Vector Logo Mark & Brand Guidelines",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d3-2",
+        "title": "Webflow Desktop Landing Layout",
+        "description": "",
+        "is_completed": true
+      },
+      {
+        "id": "d3-3",
+        "title": "Mobile Responsive Optimization & Form Hook",
+        "description": "",
+        "is_completed": false
+      }
+    ],
+    "delivery_notes": "Webflow site published to staging. Brand vector assets exported in Figma.",
+    "dispute_reason": "Incomplete Mobile Breakpoints & Missing CMS Form Integration",
+    "dispute_claim_details": "The staging site crashes on mobile viewport (<480px) and the newsletter signup form does not write to the agreed webhook endpoint. Seller stopped responding to revision requests.",
+    "evidence_items": [
+      {
+        "id": "ev-301",
+        "uploaded_by": "buyer",
+        "title": "Mobile_Breakpoint_Overflow_Bug.mp4",
+        "description": "Screen recording showing text truncation and layout breakage on iPhone 15 Safari.",
+        "url_or_hash": "ipfs://QmZ4tDuvesekSs4qM5ZBKpXiZGun7S2CYtEZRB3DYXkjGx",
+        "created_at": 1794581819
+      },
+      {
+        "id": "ev-302",
+        "uploaded_by": "seller",
+        "title": "Figma_Brand_Assets_Master.fig",
+        "description": "Completed logo variants, typography licenses, and vector source components.",
+        "url_or_hash": "https://figma.com/@trusett/brand-master-export",
+        "created_at": 1794579719
+      }
+    ],
+    "seller_payout_usdc": null,
+    "buyer_refund_usdc": null,
+    "hcs_topic_id": null,
+    "funding_tx_id": null,
+    "settlement_tx_id": null,
+    "is_demo": true
+  },
+  "TRU-2026-E1DD": {
+    "id": "TRU-2026-E1DD",
+    "title": "test",
+    "description": "",
+    "service_category": "Web & Mobile Engineering",
+    "buyer_address": "0.0.482910",
+    "buyer_name": "Alice Chen",
+    "seller_address": "0.0.519283",
+    "seller_name": "Bob Martinez (Agency Lead)",
+    "arbiter_address": "0.0.381042",
+    "arbiter_name": "Carol Vance (TRUSETT Certified Arbiter)",
+    "amount_usdc": 500.0,
+    "deadline_timestamp": 1795198511,
+    "acceptance_criteria": "Deliverables must match agreed Figma mockups, have zero console errors, and pass static automated tests.",
+    "state": "CREATED",
+    "created_at": 1794593711,
+    "funded_at": null,
+    "delivered_at": null,
+    "settled_at": null,
+    "deliverables": [
+      {
+        "id": "del-1",
+        "title": "Core UI Components & Layouts",
+        "description": "",
+        "is_completed": false
+      },
+      {
+        "id": "del-2",
+        "title": "Responsive Testing on Mobile & Tablet",
+        "description": "",
+        "is_completed": false
+      },
+      {
+        "id": "del-3",
+        "title": "GitHub Repository Code Handover",
+        "description": "",
+        "is_completed": false
+      }
+    ],
+    "delivery_notes": null,
+    "dispute_reason": null,
+    "dispute_claim_details": null,
+    "evidence_items": [],
+    "seller_payout_usdc": null,
+    "buyer_refund_usdc": null,
+    "hcs_topic_id": "0.0.982104",
+    "funding_tx_id": null,
+    "settlement_tx_id": null,
+    "is_demo": true
+  }
+}

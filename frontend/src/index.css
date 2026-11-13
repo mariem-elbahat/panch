@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F4F0E5;
+    color: #1C3028;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbars matching the editorial look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F0E5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CCD5C9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #174B3A;
+}
+
+/* Tabular numbers for clean financial figures */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

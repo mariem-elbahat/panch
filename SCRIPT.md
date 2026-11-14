@@ -1,38 +1,64 @@
-# TRUSETT — Quick Presentation Notes
+# TRUSETT — Presentation Script
 
+**Presenter:** Mariem El Bahat  
 **Pitch target:** 3–4 minutes  
 **One-line description:** TRUSETT protects digital-service payments by combining USDC escrow, delivery evidence, and a structured dispute process on Hedera.
 
-## What to say
+## Speaking script
 
-### 1. Introduction
-“Hi everyone. We’re presenting TRUSETT, a payment-protection solution for online work. Our goal is simple: make payments safer for both buyers and sellers.”
+### Slide 1 — Introduction
 
-### 2. The problem
-“Buyers worry about paying and never receiving the work. Sellers worry about delivering the work and not getting paid. A normal wallet transfer moves money, but it does not resolve disagreements about the work.”
+“Good morning/afternoon, everyone. My name is Mariem El Bahat, and today I’m presenting TRUSETT — a payment-protection solution for online work.
 
-### 3. Who needs it?
-“We’re starting with freelancers and small digital agencies doing remote projects. Their work usually has clear prices, deadlines, and deliverables, which makes it a practical place to start.”
+Our idea comes from a simple problem: sending money online is easy, but making sure both sides keep their promises is much harder. TRUSETT aims to make digital transactions safer for both buyers and sellers.”
 
-### 4. How TRUSETT works
-“The buyer and seller agree on the work and terms. The buyer deposits USDC into escrow. The seller delivers the work and submits evidence. The buyer accepts it or opens a dispute. AI helps organize the evidence, while an authorized human makes the final decision. The contract then follows the agreed outcome: release, refund, or split payment, if supported.”
+### Slide 2 — The problem
 
-### 5. Why Hedera?
-“We use Hedera for three jobs: smart contracts manage escrow rules, the token service supports token transfers, and the consensus service records important events. Private documents stay off-chain. AI assists the reviewer; it does not control the money.”
+“Imagine hiring someone online to build a website or design an application. The buyer may worry about paying upfront and never receiving the work. At the same time, the freelancer may worry about completing the project and never getting paid.
 
-### 6. Business model
-“Our planned revenue comes from a small transaction fee, optional dispute-resolution fees, and future integrations for agencies or platforms. Our next priorities are testing the complete payment flow, validating demand with freelancers, and getting the contracts reviewed for security.”
+A normal wallet transfer can confirm that money has moved, but it does not decide whether the agreed work was actually delivered. When something goes wrong, both sides are often left with messages, screenshots, and informal negotiations. That is the gap we want to address.”
 
-### 7. Closing
-“TRUSETT is built on one idea: a payment should not be the end of the trust process. We want to make online work safer and fairer for both sides. Thank you.”
+### Slide 3 — Who needs it?
+
+“We are initially focusing on freelancers and small digital agencies that work with remote clients. Their projects usually have a price, a deadline, and specific deliverables. This makes them a practical starting point for a structured payment-protection process.
+
+We want to start with this focused group, understand how they currently handle payment disputes, and validate whether they would use a solution like TRUSETT.”
+
+### Slide 4 — How TRUSETT works
+
+“Here is how the process works. First, the buyer and seller create a deal and agree on the amount, deliverables, deadline, and acceptance conditions.
+
+The buyer deposits the agreed USDC into escrow. The seller then completes the work and submits delivery evidence. The buyer can review and accept the work, or open a dispute if something does not match the agreement.
+
+This is where TRUSETT adds another layer. AI helps organize the submitted evidence, summarize the situation, and highlight possible gaps. However, AI does not make the final decision. An authorized human arbiter reviews the case and decides the outcome. The escrow contract then follows the permitted result: releasing the funds, refunding the buyer, or splitting the payment where supported.”
+
+### Slide 5 — Why Hedera?
+
+“We chose Hedera because its services fit different parts of this process. Smart contracts manage the escrow rules and settlement logic. Hedera Token Service supports the token interactions, while Hedera Consensus Service records important events so the transaction history can be inspected.
+
+We also keep private documents and personal information off-chain. This helps us separate the payment and audit process from sensitive evidence. AI assists the reviewer, but the contract and authorized roles govern settlement.”
+
+### Slide 6 — Business model and next steps
+
+“Our planned business model includes a small fee on completed protected transactions, optional dispute-resolution fees, and future integrations for agencies or platforms.
+
+Our next priorities are to test the complete payment flow, validate the need with freelancers and agencies, improve the dispute experience, and have the smart contracts reviewed for security. We want to build something people can rely on, not just something that looks good in a demo.”
+
+### Slide 7 — Closing
+
+“To conclude, TRUSETT is built around one idea: a payment should not be the end of the trust process.
+
+By bringing agreed terms, escrow, delivery evidence, and dispute resolution into one workflow, we want to make online work safer and fairer for both sides.
+
+Thank you for your time. I’m happy to answer your questions.”
 
 ## Simple demo flow
 
 1. Create a deal and show the agreed terms.
 2. Show the escrow deposit **only if it has actually succeeded**.
-3. Show delivery evidence.
-4. Show how a dispute is opened.
-5. Show the AI summary and explain that a human decides.
+3. Switch to the seller view and show delivery evidence.
+4. Switch to the buyer view and show acceptance or dispute.
+5. Show the AI summary and explain that a human makes the final decision.
 6. Show the settlement or the latest verified transaction.
 
 If something fails, say: “This step has not completed successfully, so I won’t present it as working. I’ll show the last verified step instead.”
